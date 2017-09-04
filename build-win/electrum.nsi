@@ -7,10 +7,10 @@
 ;Variables
 
   !define PRODUCT_NAME "electrum-FJC"
-  !define PRODUCT_VERSION "2.8.3"
+  !define PRODUCT_VERSION "2.9.3"
   !define PRODUCT_WEB_SITE "https://github.com/fujicoin/electrum-fjc"
-  !define PRODUCT_PUBLISHER "Electrum-FJC fujicoin.org"
-  !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
+  !define PRODUCT_PUBLISHER "fujicoin.org"
+  !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}-${PRODUCT_VERSION}"
   !define HOME "C:\electrum\"
   !define LICENCE_TXT "LICENCE.txt"
 
@@ -18,14 +18,14 @@
 ;General
 
   ;Name and file
-  Name "${PRODUCT_NAME}"
+  Name "${PRODUCT_NAME}-${PRODUCT_VERSION}"
   OutFile "dist/${PRODUCT_NAME}-${PRODUCT_VERSION}-setup.exe"
 
   ;Default installation folder
-  InstallDir "$PROGRAMFILES\${PRODUCT_NAME}"
+  InstallDir "$PROGRAMFILES\${PRODUCT_NAME}-${PRODUCT_VERSION}"
 
   ;Get installation folder from registry if available
-  InstallDirRegKey HKCU "Software\${PRODUCT_NAME}" ""
+  InstallDirRegKey HKCU "Software\${PRODUCT_NAME}-${PRODUCT_VERSION}" ""
 
   ;Request application privileges for Windows Vista
   RequestExecutionLevel admin
@@ -52,7 +52,7 @@
   BrandingText "${PRODUCT_NAME} Installer v${PRODUCT_VERSION}" 
   
   ;Sets what the titlebars of the installer will display. By default, it is 'Name Setup', where Name is specified with the Name command. You can, however, override it with 'MyApp Installer' or whatever. If you specify an empty string (""), the default will be used (you can however specify " " to achieve a blank string)
-  Caption "${PRODUCT_NAME}"
+  Caption "${PRODUCT_NAME}-${PRODUCT_VERSION}"
 
   ;Adds the Product Version on top of the Version Tab in the Properties of the file.
   VIProductVersion 1.0.0.0
@@ -60,14 +60,14 @@
   ;VIAddVersionKey - Adds a field in the Version Tab of the File Properties. This can either be a field provided by the system or a user defined field.
   VIAddVersionKey ProductName "${PRODUCT_NAME} Installer"
   VIAddVersionKey Comments "The installer for ${PRODUCT_NAME}"
-  VIAddVersionKey CompanyName "${PRODUCT_NAME}"
+  VIAddVersionKey CompanyName "${PRODUCT_PUBLISHER}"
   VIAddVersionKey LegalCopyright "2017-2018 ${PRODUCT_PUBLISHER}"
   VIAddVersionKey FileDescription "${PRODUCT_NAME} Installer"
   VIAddVersionKey FileVersion ${PRODUCT_VERSION}
   VIAddVersionKey ProductVersion ${PRODUCT_VERSION}
   VIAddVersionKey InternalName "${PRODUCT_NAME} Installer"
   VIAddVersionKey LegalTrademarks "${PRODUCT_NAME} is a trademark of ${PRODUCT_PUBLISHER}" 
-  VIAddVersionKey OriginalFilename "${PRODUCT_NAME}.exe"
+  VIAddVersionKey OriginalFilename "${PRODUCT_NAME}-${PRODUCT_VERSION}-setup.exe"
 
 ;--------------------------------
 ;Interface Settings
@@ -109,11 +109,11 @@ Section
   SetOutPath $INSTDIR
 
   ;Files to pack into the installer
-  File "dist\electrum-FJC-${PRODUCT_VERSION}.exe"
+  File "dist\${PRODUCT_NAME}-${PRODUCT_VERSION}.exe"
   File "${HOME}icons\electrum.ico"
 
   ;Store installation folder
-  WriteRegStr HKCU "Software\${PRODUCT_NAME}" "" $INSTDIR
+  WriteRegStr HKCU "Software\${PRODUCT_NAME}-${PRODUCT_VERSION}" "" $INSTDIR
 
   ;Create uninstaller
   DetailPrint "Creating uninstaller..."
@@ -121,19 +121,19 @@ Section
 
   ;Create desktop shortcut
   DetailPrint "Creating desktop shortcut..."
-  CreateShortCut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-FJC-${PRODUCT_VERSION}.exe" ""
+  CreateShortCut "$DESKTOP\${PRODUCT_NAME}-${PRODUCT_VERSION}.lnk" "$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VERSION}.exe" ""
 
   ;Create start-menu items
   DetailPrint "Creating start-menu items..."
-  CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}"
-  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\Uninstall.lnk" "$INSTDIR\Uninstall.exe" "" "$INSTDIR\Uninstall.exe" 0
-  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}\${PRODUCT_NAME}.lnk" "$INSTDIR\electrum-FJC-${PRODUCT_VERSION}.exe" "" "$INSTDIR\electrum-FJC-${PRODUCT_VERSION}.exe" 0
+  CreateDirectory "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VERSION}"
+  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VERSION}\Uninstall.lnk" "$INSTDIR\Uninstall.exe" "" "$INSTDIR\Uninstall.exe" 0
+  CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VERSION}\${PRODUCT_NAME}-${PRODUCT_VERSION}.lnk" "$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VERSION}.exe" "" "$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VERSION}.exe" 0
 
   ;Links fujicoin: URI's to Electrum-FJC
-  WriteRegStr HKCU "Software\Classes\fujicoin" "" "URL:fujicoin Protocol"
-  WriteRegStr HKCU "Software\Classes\fujicoin" "URL Protocol" ""
-  WriteRegStr HKCU "Software\Classes\fujicoin" "DefaultIcon" "$\"$INSTDIR\electrum.ico, 0$\""
-  WriteRegStr HKCU "Software\Classes\fujicoin\shell\open\command" "" "$\"$INSTDIR\electrum-FJC-${PRODUCT_VERSION}.exe$\" $\"%1$\""
+  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VERSION}" "" "URL:fujicoin Protocol"
+  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VERSION}" "URL Protocol" ""
+  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VERSION}" "DefaultIcon" "$\"$INSTDIR\electrum.ico, 0$\""
+  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VERSION}\shell\open\command" "" "$\"$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VERSION}.exe$\" $\"%1$\""
 
   ;Adds an uninstaller possibilty to Windows Uninstall or change a program section
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -160,11 +160,11 @@ Section "Uninstall"
 
   RMDir "$INSTDIR"
 
-  Delete "$DESKTOP\${PRODUCT_NAME}.lnk"
-  Delete "$SMPROGRAMS\${PRODUCT_NAME}\*.*"
-  RMDir  "$SMPROGRAMS\${PRODUCT_NAME}"
+  Delete "$DESKTOP\${PRODUCT_NAME}-${PRODUCT_VERSION}.lnk"
+  Delete "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VERSION}\*.*"
+  RMDir  "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VERSION}"
   
-  DeleteRegKey HKCU "Software\Classes\bitcoin"
-  DeleteRegKey HKCU "Software\${PRODUCT_NAME}"
+  DeleteRegKey HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VERSION}"
+  DeleteRegKey HKCU "Software\${PRODUCT_NAME}-${PRODUCT_VERSION}"
   DeleteRegKey HKCU "${PRODUCT_UNINST_KEY}"
 SectionEnd

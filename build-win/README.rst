@@ -46,11 +46,11 @@ How to compile Electrum-FJC executables on Windows
     python setup.py install
     
     cd c:\electrum\build-win
-    pyinstaller --noconfirm --ascii --name electrum-FJC-2.8.3.exe -w deterministic.spec
+    pyinstaller --noconfirm --ascii --name electrum-FJC-2.9.3.exe -w deterministic.spec
     
     # or for build on x86 OS
     cd c:\electrum\build-win
-    pyinstaller --noconfirm --ascii --name electrum-FJC-2.8.3-x86.exe -w deterministic.spec
+    pyinstaller --noconfirm --ascii --name electrum-FJC-2.9.3-x86.exe -w deterministic.spec
     
 | 8. Electrum-FJC executable is in dist\ directory
 

@@ -1,4 +1,4 @@
-Electrum - Lightweight Bitcoin client
+Electrum-FJC  Lightweight Fujicoin client
 =====================================
 
 ::
@@ -14,7 +14,7 @@ Electrum - Lightweight Bitcoin client
     :alt: Build Status
 
 
-
+  Forked by: fujicoin.org
 
 
 Getting started
@@ -100,6 +100,10 @@ Mac OS X
 
 Windows
 -------
+
+See `build-win/README`
+
+or
 
 See `contrib/build-wine/README` file.
 
