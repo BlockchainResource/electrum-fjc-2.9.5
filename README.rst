@@ -103,10 +103,6 @@ Windows
 
 See `build-win/README`
 
-or
-
-See `contrib/build-wine/README` file.
-
 
 Android
 -------
