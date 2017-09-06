@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: electrum\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-16 13:29+0000\n"
-"PO-Revision-Date: 2017-08-25 05:30-0400\n"
+"PO-Revision-Date: 2017-09-06 14:58+0900\n"
 "Last-Translator: rdymac <rdy@aol.es>\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: crowdin.com\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Crowdin-Project: electrum\n"
 "X-Crowdin-Language: ja\n"
 "X-Crowdin-File: /electrum-client/messages.pot\n"
@@ -27,11 +27,11 @@ msgstr "%(txs)s 件のトランザクションを受信しました。受け取�
 
 #: gui/qt/main_window.py:511
 msgid "&About"
-msgstr "Electrumについて (&A)"
+msgstr "Electrumについて"
 
 #: gui/qt/main_window.py:146
 msgid "&Addresses"
-msgstr "アドレス &A"
+msgstr "アドレス"
 
 #: gui/qt/main_window.py:514
 msgid "&Documentation"
@@ -39,91 +39,91 @@ msgstr "説明"
 
 #: gui/qt/main_window.py:517
 msgid "&Donate to server"
-msgstr "サーバーへ寄付 (&D)"
+msgstr "サーバーへ寄付"
 
 #: gui/qt/main_window.py:497
 msgid "&Encrypt/decrypt message"
-msgstr "&メッセージの暗号化・解読"
+msgstr "メッセージの暗号化・解読"
 
 #: gui/qt/main_window.py:458 gui/qt/main_window.py:465
 msgid "&Export"
-msgstr "エクスポート (&E)"
+msgstr "エクスポート"
 
 #: gui/qt/main_window.py:441
 msgid "&File"
-msgstr "ファイル (&F)"
+msgstr "ファイル"
 
 #: gui/qt/main_window.py:506
 msgid "&From QR code"
-msgstr "&QRコードより"
+msgstr "QRコードから"
 
 #: gui/qt/main_window.py:503
 msgid "&From file"
-msgstr "ファイルから (&F)"
+msgstr "ファイルから"
 
 #: gui/qt/main_window.py:504
 msgid "&From text"
-msgstr "テキストから (&T)"
+msgstr "テキストから"
 
 #: gui/qt/main_window.py:505
 msgid "&From the blockchain"
-msgstr "&ブロックチェーンより"
+msgstr "ブロックチェーンから"
 
 #: gui/qt/main_window.py:510
 msgid "&Help"
-msgstr "ヘルプ (&H)"
+msgstr "ヘルプ"
 
 #: gui/qt/main_window.py:471
 msgid "&History"
-msgstr "履歴 (&H)"
+msgstr "履歴"
 
 #: gui/qt/main_window.py:457 gui/qt/main_window.py:464
 msgid "&Import"
-msgstr "インポート (&I)"
+msgstr "インポート"
 
 #: gui/qt/main_window.py:463
 msgid "&Labels"
-msgstr "ラベル (&L)"
+msgstr "ラベル"
 
 #: gui/qt/main_window.py:502
 msgid "&Load transaction"
-msgstr "取引情報を読み込む (&L)"
+msgstr "取引情報を読み込む"
 
 #: gui/qt/main_window.py:453
 msgid "&Master Public Keys"
-msgstr "&マスター公開鍵"
+msgstr "マスター公開鍵"
 
 #: gui/qt/main_window.py:493
 msgid "&Network"
-msgstr "ネットワーク (&N)"
+msgstr "ネットワーク"
 
 #: gui/qt/main_window.py:467
 msgid "&New"
-msgstr "新規 (&N)"
+msgstr "新規"
 
 #: gui/qt/main_window.py:444
 msgid "&New/Restore"
-msgstr "&新規・復元"
+msgstr "新規・復元"
 
 #: gui/qt/main_window.py:512
 msgid "&Official website"
-msgstr "配布サイトへ (&O)"
+msgstr "公式ウェブサイト"
 
 #: gui/qt/main_window.py:443
 msgid "&Open"
-msgstr "&開く"
+msgstr "開く"
 
 #: gui/qt/main_window.py:451
 msgid "&Password"
-msgstr "パスワード (&P)"
+msgstr "パスワード"
 
 #: gui/qt/main_window.py:500
 msgid "&Pay to many"
-msgstr "&複数送金"
+msgstr "複数送金"
 
 #: gui/qt/main_window.py:494
 msgid "&Plugins"
-msgstr "プラグイン (&P)"
+msgstr "プラグイン"
 
 #: gui/qt/main_window.py:455
 msgid "&Private keys"
@@ -131,27 +131,27 @@ msgstr "秘密鍵"
 
 #: gui/qt/main_window.py:447
 msgid "&Quit"
-msgstr "終了(&Q)"
+msgstr "終了"
 
 #: gui/qt/main_window.py:442
 msgid "&Recently open"
-msgstr "最近開いたウォレット (&R)"
+msgstr "最近開いたウォレット"
 
 #: gui/qt/main_window.py:515
 msgid "&Report Bug"
-msgstr "バグを報告 (&R)"
+msgstr "バグを報告"
 
 #: gui/qt/main_window.py:445
 msgid "&Save Copy"
-msgstr "&ウォレットのコピーを別名で保存"
+msgstr "ウォレットを別名で保存"
 
 #: gui/qt/main_window.py:452
 msgid "&Seed"
-msgstr "シード (&S)"
+msgstr "シード"
 
 #: gui/qt/main_window.py:496
 msgid "&Sign/verify message"
-msgstr "&メッセージの署名・署名確認"
+msgstr "メッセージの署名・署名確認"
 
 #: gui/qt/main_window.py:456
 msgid "&Sweep"
@@ -159,15 +159,15 @@ msgstr "スイープ"
 
 #: gui/qt/main_window.py:489
 msgid "&Tools"
-msgstr "ツール (&P)"
+msgstr "ツール"
 
 #: gui/qt/main_window.py:483
 msgid "&View"
-msgstr "表示 (&V)"
+msgstr "表示"
 
 #: gui/qt/main_window.py:449
 msgid "&Wallet"
-msgstr "ウォレット (&W)"
+msgstr "ウォレット"
 
 #: plugins/virtualkeyboard/qt.py:13
 msgid "+"
@@ -187,7 +187,7 @@ msgstr "1 週間"
 
 #: gui/qt/main_window.py:399
 msgid "A copy of your wallet file was created in"
-msgstr "ウォレットファイルをコピーしました:"
+msgstr "ウォレットをコピーしました:"
 
 #: gui/qt/main_window.py:1047
 msgid "A suggested fee is automatically added to this field. You may override it. The suggested fee increases with the size of the transaction."
@@ -350,8 +350,12 @@ msgid "Choose a server"
 msgstr "サーバー選択"
 
 #: gui/qt/main_window.py:2609
-msgid "Choose coin (UTXO) selection method.  The following are available:\n\n"
-msgstr "コイン (UTXO) の選択方法を選んで下さい。以下のものが使用可能です：\n\n"
+msgid ""
+"Choose coin (UTXO) selection method.  The following are available:\n"
+"\n"
+msgstr ""
+"コイン (UTXO) の選択方法を選んで下さい。以下のものが使用可能です：\n"
+"\n"
 
 #: gui/qt/installwizard.py:536
 msgid "Choose the number of signatures needed to unlock funds in your wallet:"
@@ -373,15 +377,15 @@ msgstr "開く..."
 msgid "Clear"
 msgstr "クリア"
 
-#: gui/qt/__init__.py:108 gui/qt/main_window.py:1955
-#: gui/qt/main_window.py:2011 gui/qt/util.py:143
-#: gui/qt/transaction_dialog.py:106 gui/qt/qrcodewidget.py:124
+#: gui/qt/__init__.py:108 gui/qt/main_window.py:1955 gui/qt/main_window.py:2011
+#: gui/qt/util.py:143 gui/qt/transaction_dialog.py:106
+#: gui/qt/qrcodewidget.py:124
 msgid "Close"
 msgstr "閉じる"
 
 #: gui/qt/main_window.py:147
 msgid "Co&ins"
-msgstr "コイン &i"
+msgstr "コイン"
 
 #: gui/qt/main_window.py:2611 gui/kivy/uix/dialogs/settings.py:159
 msgid "Coin selection"
@@ -389,7 +393,7 @@ msgstr "コイン選択"
 
 #: gui/qt/main_window.py:149
 msgid "Con&sole"
-msgstr "コンソール &s"
+msgstr "コンソール"
 
 #: gui/qt/main_window.py:148
 msgid "Con&tacts"
@@ -609,8 +613,12 @@ msgid "Electrum was unable to produce a transaction export."
 msgstr "エクスポートできませんでした。"
 
 #: gui/qt/main_window.py:532
-msgid "Electrum's focus is speed, with low resource usage and simplifying Fujicoin. You do not need to perform regular backups, because your wallet can be recovered from a secret phrase that you can memorize or write on paper. Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Fujicoin system.\n\n"
-msgstr "Electrumの主眼はスピードと省リソースとFujicoinの取り扱いをシンプルにすることです。ウォレットファイルのバックアップを定期的に取る必要はありません。ウォレットは暗記したり紙に書きやすい英単語の列からいつでも復元できます。Fujicoinネットワークの複雑な部分は高性能なサーバに任せてあるので、計算やデータの読み込み時間がなく、即座に起動できます。\n\n"
+msgid ""
+"Electrum's focus is speed, with low resource usage and simplifying Fujicoin. You do not need to perform regular backups, because your wallet can be recovered from a secret phrase that you can memorize or write on paper. Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Fujicoin system.\n"
+"\n"
+msgstr ""
+"Electrumの主眼はスピードと省リソースとFujicoinの取り扱いをシンプルにすることです。ウォレットファイルのバックアップを定期的に取る必要はありません。ウォレットは暗記したり紙に書きやすい英単語の列からいつでも復元できます。Fujicoinネットワークの複雑な部分は高性能なサーバに任せてあるので、計算やデータの読み込み時間がなく、即座に起動できます。\n"
+"\n"
 
 #: gui/qt/main_window.py:2003
 msgid "Encrypt"
@@ -691,7 +699,7 @@ msgstr "あなたの現在のPINを入力:"
 
 #: gui/qt/installwizard.py:190
 msgid "Enter your password or choose another file."
-msgstr "パスワードを入力するか、他のファイルを選択して下さい。"
+msgstr "パスワードを入力して下さい。"
 
 #: gui/qt/main_window.py:1369
 msgid "Enter your password to proceed"
@@ -1145,8 +1153,7 @@ msgstr "数字で小数点以下に表示するゼロの数を設定します。
 msgid "OK"
 msgstr "OK"
 
-#: gui/qt/__init__.py:145 gui/qt/main_window.py:670
-#: gui/kivy/main_window.py:633
+#: gui/qt/__init__.py:145 gui/qt/main_window.py:670 gui/kivy/main_window.py:633
 msgid "Offline"
 msgstr "オフライン"
 
@@ -1653,9 +1660,11 @@ msgid "Synchronizing..."
 msgstr "同期中..."
 
 #: gui/kivy/main_window.py:709
-msgid "Text copied to clipboard.\n"
+msgid ""
+"Text copied to clipboard.\n"
 "Tap again to display it as QR code."
-msgstr "テキストはクリップボードにコピーされました。\n"
+msgstr ""
+"テキストはクリップボードにコピーされました。\n"
 "再度タップしてQRコードを表示してください。"
 
 #: gui/qt/main_window.py:1046
@@ -1680,9 +1689,11 @@ msgstr "取引手数料が一般より高く設定されているようです。
 
 #: gui/qt/installwizard.py:259
 #, python-format
-msgid "The file '%s' contains an incompletely created wallet.\n"
+msgid ""
+"The file '%s' contains an incompletely created wallet.\n"
 "Do you want to complete its creation now?"
-msgstr "ファイル'%s'は作成作業が途中のウォレットを含んでいます。\n"
+msgstr ""
+"ファイル'%s'は作成作業が途中のウォレットを含んでいます。\n"
 "ウォレットの作成を再開しますか？"
 
 #: gui/qt/installwizard.py:243 gui/qt/installwizard.py:264
@@ -1708,9 +1719,13 @@ msgstr "ウォレット'%s'は形式が異なり、Electrum用にアップグレ
 
 #: gui/qt/installwizard.py:235
 #, python-format
-msgid "The wallet '%s' contains multiple accounts, which are no longer supported in Electrum 2.7.\n\n"
+msgid ""
+"The wallet '%s' contains multiple accounts, which are no longer supported in Electrum 2.7.\n"
+"\n"
 "Do you want to split your wallet into multiple files?"
-msgstr "ウォレット'%s'は複数のアカウントが含まれていますが、Electrum 2.7でそれは廃止されサポートされなくなりました。\n\n"
+msgstr ""
+"ウォレット'%s'は複数のアカウントが含まれていますが、Electrum 2.7でそれは廃止されサポートされなくなりました。\n"
+"\n"
 "このウォレットを複数のファイルに分割しますか？"
 
 #: gui/qt/network_dialog.py:273
@@ -1883,7 +1898,8 @@ msgstr "Icons8 アイコンパック (icons8.com) のアイコンを使ってい
 
 #: gui/qt/main_window.py:2583
 msgid "Using change addresses makes it more difficult for other people to track your transactions."
-msgstr "お釣りアドレスを使うと、他人があなたの取引履歴を追跡しにくくなります。\n"
+msgstr ""
+"お釣りアドレスを使うと、他人があなたの取引履歴を追跡しにくくなります。\n"
 "送信時にアドレスの残高を使い切り、新たなアドレスに残りを移し替えるようにします。"
 
 #: gui/qt/main_window.py:1951
@@ -1945,11 +1961,17 @@ msgid "Warning"
 msgstr "警告"
 
 #: gui/qt/main_window.py:926
-msgid "Warning: The next address will not be recovered automatically if you restore your wallet from seed; you may need to add it manually.\n\n"
-"This occurs because you have too many unused addresses in your wallet. To avoid this situation, use the existing addresses first.\n\n"
+msgid ""
+"Warning: The next address will not be recovered automatically if you restore your wallet from seed; you may need to add it manually.\n"
+"\n"
+"This occurs because you have too many unused addresses in your wallet. To avoid this situation, use the existing addresses first.\n"
+"\n"
 "Create anyway?"
-msgstr "警告：次のアドレスはシードを使ってウォレットを復元する時に自動的には復元されません。手動で追加する必要があります。\n\n"
-"この原因は未使用のアドレスを一定数以上生成したことです。こうした事態を避けるため、既存のアドレスを先に使って下さい。\n\n"
+msgstr ""
+"警告：次のアドレスはシードを使ってウォレットを復元する時に自動的には復元されません。手動で追加する必要があります。\n"
+"\n"
+"この原因は未使用のアドレスを一定数以上生成したことです。こうした事態を避けるため、既存のアドレスを先に使って下さい。\n"
+"\n"
 "それでもアドレスを生成しますか？"
 
 #: gui/qt/seed_dialog.py:74
@@ -1966,7 +1988,8 @@ msgstr "あなたは分岐したブロックチェーンを参照しています
 
 #: gui/qt/__init__.py:145
 msgid "You are using Electrum in offline mode; restart Electrum if you want to get connected"
-msgstr "Electrumは今オフラインモードです。\n"
+msgstr ""
+"Electrumは今オフラインモードです。\n"
 "オンラインモードで使うには、Electrumを再起動する必要があります。"
 
 #: gui/qt/main_window.py:921
@@ -2088,4 +2111,3 @@ msgstr "未認証"
 #: gui/qt/main_window.py:363
 msgid "watching only"
 msgstr "読み取り専用"
-
