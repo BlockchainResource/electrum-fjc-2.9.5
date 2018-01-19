@@ -7,7 +7,7 @@
 ;Variables
 
   !define PRODUCT_NAME "electrum-FJC"
-  !define PRODUCT_VERSION "2.9.3-x86"
+  !define PRODUCT_VERSION "2.9.4-x86"
   !define PRODUCT_WEB_SITE "https://github.com/fujicoin/electrum-fjc"
   !define PRODUCT_PUBLISHER "fujicoin.org"
   !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}-${PRODUCT_VERSION}"

@@ -74,6 +74,9 @@ class OpenFileEventFilter(QObject):
 class ElectrumGui:
 
     def __init__(self, config, daemon, plugins):
+        # Uncomment 2L below for Japanese version.
+        #if config.get('auto_connect') is None:
+        #    config.set_key("language", "ja_JP", True)
         set_language(config.get('language'))
         # Uncomment this call to verify objects are being properly
         # GC-ed when windows are closed
