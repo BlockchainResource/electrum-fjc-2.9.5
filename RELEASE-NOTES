@@ -1,3 +1,6 @@
+# Release 2.9.5 (security update)
+  * Security fixes after vulnerability was discovered in JSONRPC interface.
+
 # Release 2.9.4
   * add CoinMarketCap price
 
